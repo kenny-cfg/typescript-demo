@@ -1,33 +1,8 @@
-type NumberOrArrayOfStrings = number | string[];
-
-let reusableVariable: NumberOrArrayOfStrings = 30;
-
-reusableVariable = ['hello'];
-
-type NumberAndStringTupleType = [number, string]
-
-let tupleVariable: NumberAndStringTupleType;
-
-tupleVariable = [1, 'goodbye'];
-
-type Triple = [number, string, string[]];
-
-let tripleVariable: Triple;
-
-tripleVariable = [1, 'whoop', ['first', 'second', 'third']]
-
-enum TShirtSize {
-  Small,
-  Medium,
-  Large
+function add(a: number, b: number) {
+  return a + b
 }
 
-type TShirtSizeAlternative = 'Small' | 'Medium' | 'Large';
+const addLambda = (a: number, b: number) => a + b
 
-let enumType: TShirtSize;
-
-enumType = TShirtSize.Small
-
-let altEnumType: TShirtSizeAlternative;
-
-altEnumType = 'Small';
+const sum = add(3, 4);
+const sumLambda = addLambda(3, 4)
