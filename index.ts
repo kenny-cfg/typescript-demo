@@ -1,14 +1,21 @@
-function add(a: number, b: number) {
-  return a + b
+interface CfgStudent {
+  firstName: string;
+  age?: number;
+  cohortYear: number;
 }
 
-const addLambda = (a: number, b: number) => a + b
+const cat: CfgStudent = {
+  firstName: 'cat',
+  cohortYear: 2024
+}
 
-const sum = add(3, 4);
-const sumLambda = addLambda(3, 4)
+const lucia: CfgStudent = {
+  firstName: 'lucia',
+  cohortYear: 2024,
+  age: 503
+}
 
-const multiply = (a: number, b?: number) => a * (b ?? 2)
-const multiplyWithDefault = (a: number, b: number = 2) => a * b
-
-console.log(multiply(3))
-console.log(multiplyWithDefault(3))
+// Won't work because we're missing cohortYear and firstName
+// const frank: CfgStudent = {
+//   age: 3003
+// }
