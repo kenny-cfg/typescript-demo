@@ -1,1 +1,2 @@
-console.log('Hello from typescript')
+let reusableVariable: any = 30;
+reusableVariable = 'Something else';
