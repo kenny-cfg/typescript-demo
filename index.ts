@@ -22,6 +22,12 @@ enum TShirtSize {
   Large
 }
 
+type TShirtSizeAlternative = 'Small' | 'Medium' | 'Large';
+
 let enumType: TShirtSize;
 
 enumType = TShirtSize.Small
+
+let altEnumType: TShirtSizeAlternative;
+
+altEnumType = 'Small';
