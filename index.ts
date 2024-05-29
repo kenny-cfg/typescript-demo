@@ -1,2 +1,2 @@
-let reusableVariable: any = 30;
-reusableVariable = 'Something else';
+let reusableVariable: number | string[] = 30;
+reusableVariable = ['hello'];
