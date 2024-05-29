@@ -15,3 +15,13 @@ type Triple = [number, string, string[]];
 let tripleVariable: Triple;
 
 tripleVariable = [1, 'whoop', ['first', 'second', 'third']]
+
+enum TShirtSize {
+  Small,
+  Medium,
+  Large
+}
+
+let enumType: TShirtSize;
+
+enumType = TShirtSize.Small
